@@ -1,4 +1,10 @@
 <script>
+	import { onMount } from 'svelte';
+	import { fade, fly } from 'svelte/transition';
+
+	onMount(async () => {
+		(await import('../webkit/btn-anim.js')).default;
+	});
 </script>
 
 <svelte:head>
@@ -6,7 +12,7 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
+<section in:fly={{ y: 200, duration: 2000 }} out:fade>
 	<div class="container">
 		<h1 class="h1 container__title">Linux</h1>
 	</div>
@@ -145,6 +151,16 @@
 		height: 100%;
 		display: block;
 		overflow-y: auto;
+		&::-webkit-scrollbar {
+			width: 0.5em;
+			border-radius: var(--border-radius);
+			background-color: rgb(230, 230, 230);
+		}
+		&::-webkit-scrollbar-thumb {
+			width: 0.5em;
+			border-radius: var(--border-radius);
+			background-color: rgb(100, 100, 100);
+		}
 	}
 	.container {
 		width: 60%;

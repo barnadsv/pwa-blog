@@ -25,6 +25,7 @@
 	--box-shadow-color: 60, 60, 60;
 	--separator-color: 0, 0, 0;
 	--primary-color: 189, 44, 212;
+	--yellow-color: 255, 214, 3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -67,6 +68,7 @@ body {
 	left: 0;
 	bottom: 0;
 	background-color: rgb(var(--bg-body));
+	scroll-behavior: smooth;
 }
 
 .separator {

@@ -3,10 +3,13 @@
 	import { onMount } from 'svelte';
 	// @ts-ignore
 	import { pwaInfo } from 'virtual:pwa-info';
+	import LoadingPage from '$lib/Loading_page.svelte';
+
 	/**
 	 * @type {typeof import("$lib/ReloadPrompt.svelte").default}
 	 */
 	let ReloadPrompt;
+	let loading_page = true;
 
 	onMount(async () => {
 		if (pwaInfo) {
@@ -33,6 +36,7 @@
 				}
 			});
 		}
+		loading_page = false;
 	});
 
 	onMount(async () => {
@@ -50,4 +54,9 @@
 	<svelte:component this={ReloadPrompt} />
 {/if}
 
-<slot />
+{#if loading_page}
+	<LoadingPage />
+{/if}
+{#if !loading_page}
+	<slot />
+{/if}
