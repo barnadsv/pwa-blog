@@ -15,7 +15,7 @@ const config = {
 			manifest: {
 				short_name: 'Linux Blog',
 				name: 'Linux Blog',
-				start_url: '/',
+				start_url: '/app/splash',
 				scope: '/',
 				display: 'standalone',
 				theme_color: '#FBFF31',
