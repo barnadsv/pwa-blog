@@ -18,7 +18,7 @@
       "_index.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-4fa5c700.css"
+      "_app/immutable/assets/_layout-d8800283.css"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
@@ -37,7 +37,7 @@
       "_index.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-8f4a7c0d.css"
+      "_app/immutable/assets/_page-a3cde4fd.css"
     ],
     "assets": [
       "_app/immutable/assets/ubuntu-image-25255d74.png",
