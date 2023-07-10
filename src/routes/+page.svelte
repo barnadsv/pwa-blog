@@ -116,6 +116,10 @@
 		</a>
 		<div class="footer__container logo">
 			<h3 class="h3">Ideve Core</h3>
+			<a class="fs-body" href="/app" rel="noreferrer">
+				App
+				<i class="fa-solid fa-link" />
+			</a>
 			<svg
 				width="100"
 				height="100"
